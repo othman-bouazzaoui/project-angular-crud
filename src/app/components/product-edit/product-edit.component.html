@@ -1,0 +1,24 @@
+<div class="container" *ngIf="productFormGroup">
+        <form [formGroup]="productFormGroup">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" formControlName="id" >
+            </div>
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" formControlName="title" [ngClass]="{'is-invalid':submitted && productFormGroup.controls.title.errors}">
+                <div *ngIf="submitted && productFormGroup.controls.title.errors" class="invalid-feedback">
+                    <div *ngIf="productFormGroup.controls.title.errors.required">Le Titre du produit est obligatoire</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Prix</label>
+                <input type="number" class="form-control" formControlName="prix">
+            </div>
+            <div class="form-group">
+                <label>Selected</label>
+                <input type="checkbox" formControlName="selected" class="form-check">
+            </div>
+            <button class="btn btn-outline-success" (click)="onUpdateProduct()">Enregistrer</button>
+        </form>
+</div>

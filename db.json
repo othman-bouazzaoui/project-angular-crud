@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Dell",
+      "prix": 1000,
+      "selected": true
+    },
+    {
+      "id": 2,
+      "title": "simens",
+      "prix": 3000,
+      "selected": true
+    },
+    {
+      "id": 3,
+      "title": "Hp",
+      "prix": 1000,
+      "selected": true
+    },
+    {
+      "title": "EckoLink",
+      "prix": 1000,
+      "selected": true,
+      "id": 4
+    }
+  ]
+}
